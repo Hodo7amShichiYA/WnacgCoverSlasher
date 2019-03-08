@@ -6,7 +6,7 @@ class wnacg2(scrapy.Spider):
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36',
         }
-        for i in range(2, 50):
+        for i in range(1, 50):
             url1 = "https://www.wnacg.org/photos-index-page-%s-aid-70413.html" % i
             yield scrapy.Request(
                 url=url1,
